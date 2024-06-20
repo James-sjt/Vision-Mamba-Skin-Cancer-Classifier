@@ -1,3 +1,4 @@
+# Imported this file from https://github.com/alxndrTL/mamba.py/pscan.py  Alexandre TL
 import math
 
 import torch
