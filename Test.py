@@ -1,3 +1,30 @@
+"""Evaluate the Mamba-based classifier to classify skin cancer diseases.
+
+Usage:
+  Test.py <d_model> <state_size> <seq_len> <batch_size> <is_dropout>
+  <num_cls> <patch_size> <emb_out_features> <num_blocks> <epochs> <version> <cls_1> <cls_2>
+  Test.py (-h | --help)
+
+General options:
+  -h --help             Show this screen.
+
+Arguments:
+  <d_model>             The dimension of Mamba model.
+  <state_size>          The parameter 'n' in Mamba paper.
+  <seq_len>             The sequence length of Mamba model.
+  <batch_size>          The batch size for training.
+  <is_dropout>          Whether to use dropout or not in training. e.g. 0: False, 1: True.
+  <num_cls>             The number of class the model is to classify.
+  <patch_size>          The patch size for embedding.
+  <emb_out_features>    The dimension for the output of embedding.
+  <num_blocks>          The number of vision mamba block in model.
+  <epochs>              Number of epochs.
+  <version>             The version of model. e.g. v4
+  <cls_1>               The first class from ['akiec', 'bcc', 'bkl', 'df', 'mel', 'nv', 'vasc'].
+  <cls_2>               The second class from ['akiec', 'bcc', 'bkl', 'df', 'mel', 'nv', 'vasc'].
+
+"""
+
 from Model import Model
 import torch
 from Loader import loader_test
