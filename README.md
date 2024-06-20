@@ -32,6 +32,7 @@ Run the following code to classify all images and devide training and testing se
 ```bash
 $ python -u data_pre_process.py
 Pre processing done!
+
 ```
 ## Train the model
 Run the follwing code to get the help.
@@ -66,6 +67,10 @@ Arguments:
 Run the following code to train the model, the following is to train a model to classify mel and nv.
 ```bash
 $ python -u Train.py 192 16 258 5 1 2 16 192 8 100 v4 mel nv
+start training...
+...
+training finished...
+
 ```
 After each 10 epochs, programm will save the parameter of this model in .pth form, where you can find under Vision-Mamba-Skin-Cancer-Classifier-main. 
 ## Model Evaluation
