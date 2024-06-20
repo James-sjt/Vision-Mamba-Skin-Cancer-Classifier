@@ -6,7 +6,7 @@ Run the following code to config the environment.
 $ pip install -r config.txt
 ```
 ## Download data
-https://www.kaggle.com/datasets/farjanakabirsamanta/skin-cancer-dataset/code
+Please download data from here (https://www.kaggle.com/datasets/farjanakabirsamanta/skin-cancer-dataset/code) 
 It will be 2.7G.
 Unzip the data to Vision-Mamba-Skin-Cancer-Classifier-main.
 Before do the next step, run the following code to check all code and data are at the right position.
