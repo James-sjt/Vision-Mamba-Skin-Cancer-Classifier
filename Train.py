@@ -121,7 +121,7 @@ def main(config):
             pre, labels = torch.zeros(total_num), torch.zeros(total_num)
             flag = flags[config.cls_1]
             for i in range(int(nums[config.cls_1] / config.batch_size)):
-                images, label = loader_test(config.batch_size, flag, config.clas_1, config.cls_2)
+                images, label = loader_test(config.batch_size, flag, config.cls_1, config.cls_2)
                 op = model(images)
                 for j in range(config.batch_size):
                     pre[i * config.batch_size + j] = torch.argmax(op[j])
