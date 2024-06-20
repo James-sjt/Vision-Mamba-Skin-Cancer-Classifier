@@ -12,6 +12,20 @@ Unzip the data to Vision-Mamba-Skin-Cancer-Classifier-main.
 Before do the next step, run the following code to check all code and data are at the right position.
 ```bash
 $ ls
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2024/6/20     14:58                Skin Cancer
+-a----         2024/6/20     16:43             91 config.txt
+-a----         2024/6/20     15:04           1218 data_pre_process.py
+-a----         2024/6/20     14:58         563277 HAM10000_metadata.csv
+-a----         2024/6/20     15:39           2197 Loader.py
+-a----         2024/6/20     12:59          11107 Mamba_v2.py
+-a----         2024/6/20     12:59          15984 Mamba_v4.py
+-a----         2024/6/20     13:03           3663 Model.py
+-a----         2024/5/31     22:38           4503 pscan.py
+-a----         2024/6/20     21:02           5193 Test.py
+-a----         2024/6/20     20:33           7503 Train.py
+
 ```
 ## Data Pre-process
 Run the following code to classify all images and devide training and testing set in a ratio of 8: 2.
