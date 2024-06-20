@@ -1,10 +1,10 @@
 # Vision-Mamba-Skin-Cancer-Classifier
-##Config Environment
+## Config Environment
 Run the following code to config the environment.
 ```bash
 $ pip install -r config.txt
 ```
-##Download data
+## Download data
 https://www.kaggle.com/datasets/farjanakabirsamanta/skin-cancer-dataset/code
 It will be 2.7G.
 Unzip the data to Vision-Mamba-Skin-Cancer-Classifier-main.
@@ -12,12 +12,12 @@ Before do the next step, run the following code to check all code and data are a
 ```bash
 $ ls
 ```
-##Data Pre-process
+## Data Pre-process
 Run the following code to classify all images and devide training and testing set in a ratio of 8: 2.
 ```bash
 $ python -u data_pre_process.py
 ```
-##Train the model
+## Train the model
 Run the follwing code to get the help.
 ```bash
 $ python Train.py -h
@@ -52,7 +52,7 @@ Run the following code to train the model, the following is to train a model to 
 $ python -u Train.py 192 16 258 5 1 2 16 192 8 100 v4 mel nv
 ```
 After each 10 epochs, programm will save the parameter of this model in .pth form, where you can find under Vision-Mamba-Skin-Cancer-Classifier-main. 
-##Model Evaluation
+## Model Evaluation
 Run the following code to get the help.
 ```bash
 $ python Test.py -h
