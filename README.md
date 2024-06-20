@@ -31,6 +31,7 @@ d-----         2024/6/20     14:58                Skin Cancer
 Run the following code to classify all images and devide training and testing set in a ratio of 8: 2.
 ```bash
 $ python -u data_pre_process.py
+Pre processing done!
 ```
 ## Train the model
 Run the follwing code to get the help.
@@ -100,7 +101,7 @@ Arguments:
 Run the folloing code to evaluate this model on testing set. (Notice: Parameters need to be the same as during training!!!)
 ```bash
 $ python -u Test.py 192 16 258 5 1 2 16 192 8 100 v4 mel nv
-
+Start testing...
               precision    recall  f1-score   support
 
          0.0       1.00      0.93      0.96       236
@@ -109,6 +110,6 @@ $ python -u Test.py 192 16 258 5 1 2 16 192 8 100 v4 mel nv
     accuracy                           0.99      1560
    macro avg       0.99      0.97      0.98      1560
 weighted avg       0.99      0.99      0.99      1560
-
+Test complete...
 
 ```
