@@ -1,3 +1,4 @@
+# Imported this file from https://github.com/alxndrTL/mamba.py/pscan.py  Alexandre TL
 import math
 from dataclasses import dataclass
 from typing import Union
@@ -123,7 +124,7 @@ class VMambaBlock(nn.Module):
         self.D._no_weight_decay = True
 
         # Backward Parameters
-        if config.bidirectional:
+        if config.muti_direction:
             A_b = torch.arange(1, config.d_state + 1, dtype=torch.float32).repeat(config.d_inner, 1)
             self.A_log_b = nn.Parameter(torch.log(A_b))
             self.A_log_b._no_weight_decay = True
@@ -183,7 +184,7 @@ class VMambaBlock(nn.Module):
                      x_proj=self.x_proj,
                      dt_proj=self.dt_proj)
 
-        if self.config.bidirectional:
+        if self.config.multi_direction:
             xz_b = xz.flip([1])
             x_b, z_b = xz_b.chunk(2, dim=-1)
             x_b = x_b.transpose(1, 2)
@@ -198,7 +199,7 @@ class VMambaBlock(nn.Module):
                            dt_proj=self.dt_proj_b)
 
         if self.config.use_cuda:
-            if not self.config.bidirectional:
+            if not self.config.multi_direction:
                 return self.out_proj(y)
             else:
                 if self.config.divide_output:
@@ -208,7 +209,7 @@ class VMambaBlock(nn.Module):
 
         z = F.silu(z)
         y = y * z
-        if not self.config.bidirectional:
+        if not self.config.multi_direction:
             return self.out_proj(y)
         else:
             z_b = F.silu(z_b)
