@@ -105,7 +105,7 @@ Arguments:
 ```
 Run the folloing code to evaluate this model on testing set. (Notice: Parameters need to be the same as during training!!!)
 ```bash
-$ python -u Test.py 192 16 258 5 1 2 16 192 8 100 v4 mel nv
+$ python -u Test.py 192 16 258 5 0 2 16 192 8 100 v4 mel nv
 Start testing...
               precision    recall  f1-score   support
 
