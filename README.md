@@ -1,4 +1,4 @@
-# Vision-Mamba-Skin-Cancer-Classifier
+# Vision Mamba Skin Cancer Classifier
 ### JiatongSi, RuixiangWu, ShuhanXu
 ## Config Environment
 Run the following code to config the environment.
